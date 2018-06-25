@@ -847,7 +847,7 @@ describe('mock tests', function () {
         results.push(data);
       })
       .on('end', function () {
-        results.length.should.equal(12);
+        results.length.should.equal(EXPECTED_TOTAL_TEST_DOCS);
         return done();
       });
     });
